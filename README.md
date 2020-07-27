@@ -16,7 +16,7 @@ This course is for non-coders or juniors who want to be a professional web devel
 
 Feel free to take a look at the course preview and enroll if it is along with your ambitions.
 
-# Table Of Content
+## Table Of Content
 
 1. Create Folder Structure
    1. create root folder as jsamazona
@@ -367,7 +367,7 @@ Feel free to take a look at the course preview and enroll if it is along with yo
     2. Create heroku account
     3. install Heroku CLI
     4. heroku login
-    5. heroku apps:create <yourname>jsamazona
+    5. heroku apps:create 'yourname'jsamazona
     6. Edit package.json for heroku-prebuild
     7. Edit package.json for heroku-postbuild
     8. Edit package.json for node engines

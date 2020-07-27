@@ -12,5 +12,7 @@ module.exports = {
   rules: {
     'no-console': 0,
     'no-underscore-dangle': 'off',
+    'import/prefer-default-export': 'off',
+    'no-nested-ternary': 'off',
   },
 }
