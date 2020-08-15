@@ -6,6 +6,7 @@ import {parseRequestUrl, showLoading, hideLoading} from './utils'
 import SigninScreen from './screens/SigninScreen'
 import Header from './components/Header'
 import RegisterScreen from './screens/RegisterScreen'
+import ProfileScreen from './screens/ProfileScreen'
 
 const routes = {
   '/': HomeScreen,
@@ -14,6 +15,7 @@ const routes = {
   '/cart': CartScreen,
   '/signin': SigninScreen,
   '/register': RegisterScreen,
+  '/profile': ProfileScreen,
 }
 
 const router = async () => {
@@ -31,7 +33,7 @@ const router = async () => {
 
   const main = document.getElementById('main_container')
   main.innerHTML = await screen.render()
-  await screen.after_render()
+  if (screen.after_render) await screen.after_render()
 
   hideLoading()
 }
