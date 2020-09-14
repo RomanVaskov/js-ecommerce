@@ -80,3 +80,7 @@ export const getPayment = () => {
       }
   return payment
 }
+
+export const cleanCart = () => {
+    localStorage.removeItem('cartItems')
+}
